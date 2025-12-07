@@ -138,5 +138,5 @@ def ringBell(schedule_list, audio_file='bell.mp3', check_interval=20, volume=0.8
 # Example usage:
 if __name__ == "__main__":
     # Example schedule: 9:00 AM, 10:30 AM, 3:00 PM, 7 PM (24-hour: 9:00, 10:30, 15:00, 19:00)
-    schedule = ['9', '10:30', '15:00', '7pm']
+    schedule = ['9', '00:29', '15:00', '7pm','00:30','00:31','00:32']
     ringBell(schedule, audio_file='bell.mp3', check_interval=15, volume=0.9)
