@@ -429,7 +429,7 @@ def bell_menu():
                 print("No times entered.")
 
         # 2. Use saved schedule 
-        #Saved Schedules: IF WE ENTERS 0 ITS A BUG WHERE THE LAST Saved Schedu BELL WORKS
+        #Saved Schedules: IF WE ENTERS 0 ITS A BUG WHERE THE LAST Saved Schedu BELL WORKS (EVERY WHERE)
         elif choice == "2":
             names = list_schedule_names()
             if not names:
