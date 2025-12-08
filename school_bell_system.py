@@ -1,5 +1,5 @@
 """
-SCHOOL BELL SYSTEM - MENU DRIVEN (NO JSON, PURE PYTHON)
+SCHOOL BELL SYSTEM - MENU DRIVEN APPLICATION
 
 - Bell mode (with in-memory schedules)
 - Assembly mode (manual selection based on today's day)
@@ -170,7 +170,7 @@ def ringBell(schedule_list, audio_file='bell.mp3',
 
 
 # -------------------------------------------------------------
-# IN-MEMORY BELL SCHEDULES (NO JSON, ONLY PYTHON)
+# IN-MEMORY BELL SCHEDULES (ONLY PYTHON)
 # -------------------------------------------------------------
 
 BELL_SCHEDULES = {
@@ -601,6 +601,7 @@ def bell_menu():
 
 def main_menu():
     while True:
+        print("\n\t\tJOTHI - SMART BELL & ASSEMBLY SYSTEM")
         print("\n========== MAIN MENU ==========")
         print("1. Bell Mode")
         print("2. Assembly")
@@ -623,9 +624,86 @@ def main_menu():
             settings_menu()
 
         elif choice == "5":
-            print("\nSmart School Bell & Assembly System")
-            print("Created by Daniel (JOTHI Bot Project)")
+            ABOUT_US_TEXT = """
+🌟 IN LOVING MEMORY OF JYOTHI MA’AM 
+
+This project carries the name “Jyoti” for a reason far deeper than technology.
+It is a tribute to our beloved Vice-Principal, Mrs. Jyothi Suresh , who passed away.
+She served the school with dedication for more than two decades, touching the lives of thousands of students with her kindness, discipline, and gentle strength.
+
+To me, she was not just an educator — she was a mother.
+When I was in Class 11, she encouraged me to dream bigger and challenged our class to create something meaningful.
+That moment planted the seed for this project.
+
+Even though I could not complete my first attempt to build a WhatsApp-connected bell system while she was with us, her belief in me stayed alive.
+After losing her, it took time to process the grief…
+but I knew I had to finish this — for her.
+
+This software, JOTHI, is a heartfelt dedication to her memory.
+Her inspiration, guidance, and warmth will forever remain the foundation of this project.
+Her loss leaves a void that can never be filled. Yet, her legacy of service, 
+kindness, and integrity will forever remain in the heart of our institution. 
+May her noble soul rest in eternal peace. Our heartfelt condolences go to her 
+family, with prayers.
+
+
+🧑‍💻 About the Developer 
+
+I am DANIEL JENU THAYYIL , a Class 12 Computer Science student (2025-26), passionate about programming, problem-solving, and creating meaningful tools that can help others.
+Developing JOTHI – Smart Bell & Assembly System has been the most challenging and rewarding project of my school life.
+
+From learning Python in the shell to understanding APIs, PyGame, system design, and menu-driven programming — every step taught me something new.
+This project is more than code… it is a promise I made, and a dream I wanted to complete.
+
+If you wish to contribute, improve, or customize this software, you can reach me at:
+
+GitHub: github.com/DanielJyoti
+Instagram: @danieljyoti
+
+I hope this project inspires others just like Jyoti Ma’am inspired me.
+
+🤝 Special Thanks – Navtej
+
+A heartfelt thank you to Navtej, my friend, who helped me in various parts of the project — troubleshooting ideas, testing modules, and supporting me during the toughest moments of development.
+
+Your help made this journey easier, and this project carries your contribution as well.
+
+🎓 Special Tribute – Arun Sathya Sir (Computer Science Department)
+
+My deepest respect and gratitude to Arun Sathya Sir, my Computer Science teacher.
+He taught me Python, SQL, logic building, and most importantly — how to think like a programmer.
+
+I often asked him questions with no logic at all…
+yet he never hesitated to guide me patiently.
+
+This project would not exist without the foundation he built for me.
+Thank you, sir, for believing in me, teaching me, and supporting me throughout this journey.
+
+⭐ Closing Note
+
+JOTHI is not just a software.
+It is:
+
+A memory
+
+A tribute
+
+A promise fulfilled
+
+And a symbol of inspiration
+
+Dedicated to an extraordinary woman,
+built by a determined student,
+and supported by wonderful people.
+
+This is our story.
+
+"""
+            print("\n========== ABOUT US ==========\n")
+            print(ABOUT_US_TEXT)
+            print("\n==============================\n")
             input("Press Enter to go back.")
+
 
         elif choice == "0":
             print("Goodbye!")
